@@ -117,16 +117,11 @@ ul{
   max-width: 400px;
 }
 
-.button-1{
-  display:none;
-}
-
-
-
 .boxes{
   padding-top:5em;
   text-align: center;
 }
+
 
 @media only screen and (min-width: 768px) {
 
