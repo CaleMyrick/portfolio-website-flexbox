@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin:0;
   padding:0;
-  background-color: #24252A;
+  background-color: black;
 }
 
 li, a, button {
@@ -21,10 +21,13 @@ align-items: center;
 padding:30px 10%;
 }
 
-h2{
+h1{
   cursor:pointer;
   margin-right: auto;
   font-family: 'Satisfy';
+  font-size: 3em;
+  color:#00F;
+  text-decoration: underline;
 }
 
 .nav-links{
@@ -36,10 +39,115 @@ h2{
   padding: 0px 20px;
 }
 
+ul{
+  padding-left:5em;
+}
+
 .nav-links li a {
   transition: all 0.3s ease 0s;
 }
 
-.nav-links li a:hover {
-  color:#0088a9;
+.home{
+  border:solid 1px white;
+}
+
+
+.projects a:hover {
+  /*color:#0088a9;*/
+  border:solid 1px white;
+  padding:.5px 12px .5px 12px;
+  margin:0;
+}
+
+.contact a:hover {
+  /*color:#0088a9;*/
+  border:solid 1px white;
+  padding:.5px 12px .5px 12px;
+  margin:0;
+}
+
+.home-2 a:hover {
+  /*color:#0088a9;*/
+  border:solid 1px white;
+  padding:.5px 12px .5px 12px;
+  margin:0;
+}
+
+.projects-2{
+  border:solid 1px white;
+}
+
+.contact-2 a:hover {
+  /*color:#0088a9;*/
+  border:solid 1px white;
+  padding:.5px 12px .5px 12px;
+  margin:0;
+}
+
+.home-3 a:hover {
+  /*color:#0088a9;*/
+  border:solid 1px white;
+  padding:.5px 12px .5px 12px;
+  margin:0;
+}
+
+.projects-3 a:hover {
+  border:solid 1px white;
+  padding:.5px 12px .5px 12px;
+  margin:0;
+}
+
+.contact-3 {
+  /*color:#0088a9;*/
+  border:solid 1px white;
+  padding:.5px 12px .5px 12px;
+  margin:0;
+}
+
+.container{
+  display:flex;
+  color:white;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
+.images{
+  flex: 1 0 15em;
+  min-width: 13em;
+  max-width: 400px;
+}
+
+.button-1{
+  display:none;
+}
+
+
+
+.boxes{
+  padding-top:5em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+  *{
+    max-width: 1440px;
+  }
+
+  .container img:hover{
+    opacity:.3;
+    transition:.5s ease;
+  }
+
+  .images{
+    max-width: 380px;
+  }
+
+img:hover + .button-1, .button-1:hover {
+  display:inline-block;
+}
+
+  .boxes{
+    overflow:hidden;
+  }
 }
